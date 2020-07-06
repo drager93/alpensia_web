@@ -1,0 +1,144 @@
+@import "~/assets/styles/import.scss";
+
+.term-wrapper {
+  .term-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $greyish-brown;
+
+    @include device-mobile {
+      font-size: 20px;
+    }
+  }
+
+  .term-sub {
+    margin-top: 25px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    max-width: 1100px;
+  }
+
+  .table-wrap {
+    .hotel-table {
+      max-width: 1100px;
+
+      .table-title {
+        padding-top: 45px;
+        padding-bottom: 25px;
+      }
+
+      .t-header {
+        background-color: #e8e4de;
+
+        .header-left {
+          border-right: 1px solid $white;
+          line-height: 80px;
+
+          @include device-mobile {
+            font-size: 10px;
+          }
+        }
+
+        .header-right {
+          > div {
+            line-height: 40px;
+          }
+
+          .right-top {
+            border-bottom: 1px solid $white;
+
+            @include device-mobile {
+              font-size: 12px;
+            }
+          }
+
+          .right-bottom {
+            > div {
+              flex: 1;
+
+              &:not(:last-child) {
+                border-right: 1px solid $white;
+              }
+
+              @include device-mobile {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .t-body {
+        .body-content {
+          border-bottom: 1px solid #e5e5e5;
+
+          > div {
+            line-height: 1.7;
+
+            &:not(:last-child) {
+              border-right: 1px solid #e5e5e5;
+            }
+          }
+
+          .content-left {
+            padding: 12px;
+            background-color: #f4f4f4;
+
+            @include device-mobile {
+              font-size: 12px;
+            }
+          }
+
+          .content-right {
+            @include device-mobile {
+              font-size: 10px;
+            }
+
+            .content {
+              flex: 1;
+
+              &:not(:last-child) {
+                border-right: 1px solid #e5e5e5;
+              }
+
+              > div {
+                padding: 12px 10px;
+                word-break: keep-all;
+
+                @include device-mobile {
+                  padding: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      padding-bottom: 55px;
+      text-align: left;
+      max-width: 1100px;
+      border-bottom: 1px solid #e5e5e5;
+
+      > img {
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+
+        @include device-mobile {
+          margin-right: 5px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      > div {
+        @include device-mobile {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

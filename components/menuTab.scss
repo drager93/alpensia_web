@@ -1,0 +1,30 @@
+@import "~/assets/styles/import.scss";
+
+.menuTab-wrapper {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+  top: 70px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: calc(100% - 40px);
+  left: 20px;
+
+  > div {
+    padding: 23px 0;
+    line-height: 1.2;
+
+    > a {
+      @include device-tablet() {
+        padding: 15px 0;
+        font-size: 11px;
+      }
+    }
+
+    &:hover {
+      > a {
+        color: $yellow-orange;
+      }
+    }
+  }
+}

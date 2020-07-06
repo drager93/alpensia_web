@@ -1,0 +1,43 @@
+@import "~/assets/styles/import.scss";
+
+.product-info-header {
+  background-color: $dark-grey;
+
+  .header-background {
+    height: 390px;
+    background-image: url("../static/images/productInfo/intercontinental/section1-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-mobile() {
+      height: 300px;
+    }
+
+    .header-title {
+      padding-bottom: 10px;
+
+      @include device-tablet() {
+        text-align: center;
+      }
+
+      @include device-mobile() {
+        padding-bottom: 5px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+
+    .header-text {
+      @include device-tablet() {
+        font-size: 17px;
+        text-align: center;
+      }
+
+      @include device-mobile() {
+        line-height: 1.2;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "~/assets/styles/import.scss";
+
+.town {
+  .section1-header {
+    @include device-tablet() {
+      font-size: 33px;
+      line-height: 1.2;
+    }
+
+    @include device-mobile() {
+      font-size: 27px;
+      line-height: 1.2;
+    }
+  }
+
+  .section1-text {
+    padding-top: 10px;
+    padding-bottom: 65px;
+    line-height: 1.1;
+
+    @include device-mobile() {
+      padding-top: 0;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+
+  .town-content {
+    padding-top: 250px;
+
+    @include device-tablet() {
+      padding-top: 100px;
+    }
+
+    @include device-mobile() {
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+
+    .postbox {
+      max-width: 1300px;
+      padding-bottom: 140px;
+
+      @include device-tablet() {
+        padding-bottom: 60px;
+      }
+
+      @include device-mobile() {
+        padding-bottom: 60px;
+      }
+
+      > div {
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+
+        @include device-tablet() {
+          &:not(:last-child) {
+            margin-right: 0;
+            padding-bottom: 30px;
+          }
+        }
+
+        @include device-mobile() {
+          &:not(:last-child) {
+            margin-right: 0;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .imagebox {
+      padding-bottom: 140px;
+      max-width: 1120px;
+
+      @include device-mobile() {
+        padding-bottom: 0;
+      }
+
+      > div {
+        height: 270px;
+
+        @include device-mobile() {
+          height: 240px;
+        }
+      }
+    }
+  }
+}

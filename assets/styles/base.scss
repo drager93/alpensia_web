@@ -1,0 +1,52 @@
+// 기본 베이스 css 지정
+
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    div {
+      word-break: break-word;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    button {
+      border-style: none;
+    }
+
+    input,
+    textarea {
+      border-style: none;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .t-shadow {
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .t-justify {
+      text-align: justify;
+    }
+
+    .t-center {
+      text-align: center;
+    }
+
+    .c-pointer {
+      cursor: pointer;
+    }
+  }
+}

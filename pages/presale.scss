@@ -1,0 +1,46 @@
+@import "~/assets/styles/import.scss";
+
+.presale-wrapper {
+  .section {
+    padding-top: 58px;
+    padding-bottom: 127px;
+    background-image: url("../static/images/presale/section1-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-tablet() {
+      padding-top: 120px;
+      padding-bottom: 160px;
+    }
+
+    @include device-mobile() {
+      padding-top: 85px;
+      padding-bottom: 145px;
+    }
+
+    > div {
+      line-height: 1.2;
+    }
+
+    .header {
+      @include device-mobile() {
+        font-size: 28px;
+      }
+    }
+
+    .subheader {
+      margin-top: 13px;
+      padding: 0 28px;
+      padding-top: 4px;
+      padding-bottom: 5px;
+      border-radius: 23px;
+      background-color: $dull-orange;
+
+      @include device-mobile() {
+        padding: 5px 7px;
+        font-size: 12px;
+      }
+    }
+  }
+}

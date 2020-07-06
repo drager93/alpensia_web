@@ -1,0 +1,61 @@
+@import "~/assets/styles/import.scss";
+
+.alpensia-info-wrapper {
+  .section1 {
+    padding-top: 150px;
+
+    @include device-tablet() {
+      padding-top: 40px;
+      // padding-bottom: 40px;
+    }
+
+    @include device-mobile() {
+      padding-top: 40px;
+      // padding-bottom: 40px;
+    }
+
+    > div {
+      @include device-mobile() {
+        width: 100%;
+      }
+    }
+
+    .section1-tab {
+      margin-bottom: 100px;
+      border: 1px solid $greyish-brown;
+      max-width: 600px;
+
+      @include device-mobile() {
+        margin-bottom: 40px;
+      }
+
+      .tab-box {
+        padding-top: 14px;
+        padding-bottom: 18px;
+        line-height: 1.1;
+        flex: 1;
+        color: $greyish-brown;
+        cursor: pointer;
+
+        &.active {
+          background-color: $greyish-brown;
+          color: white;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $greyish-brown;
+        }
+
+        // @include device-tablet() {
+        //   width: 100%;
+        // }
+
+        @include device-mobile() {
+          padding-top: 14px;
+          padding-bottom: 15px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

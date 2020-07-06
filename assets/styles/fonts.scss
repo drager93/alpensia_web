@@ -1,0 +1,51 @@
+@import "./variable";
+
+.noto {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.n-my {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.n-sq {
+  font-family: "NanumSquare", sans-serif !important;
+}
+
+.font {
+  &._regular {
+    font-weight: 300;
+  }
+  &._normarl {
+    font-weight: normal;
+  }
+  &._bold {
+    font-weight: bold;
+  }
+
+  &._white {
+    color: $white;
+  }
+  &._greyish {
+    color: $greyish-brown;
+  }
+  &._greyish-three {
+    color: $greyish-brown-three;
+  }
+  &._warm-grey {
+    color: $warm-grey;
+  }
+  &._y-orange {
+    color: $yellow-orange;
+  }
+  &._ochre {
+    color: $yellow-ochre;
+  }
+
+  @for $i from 10 through 100 {
+    &._#{$i} {
+      font-size: #{$i}px;
+      line-height: 1;
+    }
+  }
+}

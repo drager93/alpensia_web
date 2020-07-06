@@ -1,0 +1,45 @@
+@import "~/assets/styles/import.scss";
+
+.service-wrapper {
+  margin-bottom: 50px;
+
+  .service-title {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    @include device-mobile {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      font-size: 30px;
+    }
+  }
+
+  .tab-wrap {
+    .service-tab {
+      margin-bottom: 70px;
+      border: 1px solid #ddd;
+
+      @include device-mobile {
+        margin-bottom: 40px;
+      }
+
+      > div {
+        padding: 10px 0;
+
+        @include device-mobile {
+          line-height: 1.2;
+          font-size: 12px;
+        }
+
+        &.active {
+          background-color: $dull-orange;
+          color: white;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}

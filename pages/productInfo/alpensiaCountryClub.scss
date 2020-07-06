@@ -1,0 +1,116 @@
+@import "~/assets/styles/import.scss";
+
+.alpensia-country-club {
+  .section1 {
+    padding-top: 106px;
+    padding-bottom: 170px;
+
+    @include device-tablet() {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    @include device-mobile() {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    > div {
+      &:last-child {
+        padding-top: 70px;
+
+        @include device-mobile() {
+          padding-top: 40px;
+        }
+      }
+    }
+
+    .section1-header {
+      > div {
+        padding-bottom: 65px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+
+        @include device-tablet() {
+          font-size: 50px;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .ccmap {
+      max-width: 1100px;
+
+      @include device-tablet() {
+        height: 500px;
+      }
+
+      @include device-mobile() {
+        height: 250px;
+      }
+    }
+  }
+
+  .section2 {
+    .section2-content {
+      .postbox-wrapper {
+        max-width: 1500px;
+        position: relative;
+      }
+
+      .post-box {
+        max-width: 1300px;
+
+        > div {
+          margin-right: 5px;
+
+          @include device-tablet() {
+            margin-right: 5px;
+            padding-bottom: 30px;
+          }
+
+          @include device-mobile() {
+            margin-right: 5px;
+            padding-bottom: 30px;
+          }
+        }
+      }
+
+      .m-post-box {
+        @include device-tablet() {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        @include device-mobile() {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+
+      .zindex-background {
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        height: 235px;
+        z-index: -9;
+        background-color: $white-nine;
+      }
+
+      &:last-child {
+        margin-top: 50px;
+
+        @include device-mobile() {
+          margin-top: 0;
+          padding-bottom: 60px;
+        }
+      }
+    }
+  }
+}

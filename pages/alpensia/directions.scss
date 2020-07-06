@@ -1,0 +1,239 @@
+@import "~/assets/styles/import.scss";
+
+.directions-wrapper {
+  .section1 {
+    height: 390px;
+    background-image: url("../../static/images/info/direction-s1-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-mobile() {
+      height: 300px;
+    }
+
+    > div {
+      line-height: 1.4;
+    }
+
+    .section1-header {
+      @include device-mobile() {
+        font-size: 30px;
+      }
+    }
+
+    .section1-text {
+      @include device-mobile() {
+        padding: 0 15px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .section2 {
+    padding-top: 106px;
+    padding-bottom: 140px;
+
+    @include device-mobile() {
+      padding-top: 70px;
+      padding-bottom: 0;
+    }
+
+    .section2-header {
+      max-width: 1000px;
+
+      .header-title {
+        padding-bottom: 10px;
+
+        @include device-tablet() {
+          padding-bottom: 0;
+          font-size: 34px;
+        }
+
+        @include device-mobile() {
+          padding-bottom: 0;
+          font-size: 26px;
+        }
+      }
+
+      .header-text {
+        padding-bottom: 30px;
+        line-height: 1.4;
+
+        @include device-tablet() {
+          padding-top: 20px;
+          word-break: keep-all;
+        }
+      }
+
+      .m-header-text {
+        padding-top: 20px;
+      }
+
+      > div {
+        line-height: 1.1;
+
+        &:last-child {
+          padding-bottom: 30px;
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .section2-content {
+      @include device-mobile() {
+        padding-bottom: 60px;
+      }
+
+      .section2-location {
+        margin-bottom: 15px;
+        width: 1000px;
+        height: 520px;
+
+        @include device-tablet() {
+          // padding: 0 20px;
+          width: 100%;
+          height: 520px;
+        }
+
+        @include device-mobile() {
+          // padding: 0 20px;
+          width: 100%;
+          height: 520px;
+        }
+      }
+
+      .location-text {
+        @include device-tablet() {
+          text-align: center;
+          line-height: 1.3;
+        }
+
+        @include device-mobile() {
+          font-size: 14px;
+          text-align: center;
+          line-height: 1.3;
+        }
+      }
+
+      > a {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .section3 {
+    padding-top: 110px;
+    padding-bottom: 130px;
+    background-image: url("../../static/images/info/section3-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-mobile() {
+      padding-top: 46px;
+      padding-bottom: 36px;
+    }
+
+    .section3-content {
+      max-width: 1000px;
+
+      .section3-subheader {
+        @include device-tablet() {
+          padding-bottom: 12px;
+          font-size: 34px;
+          line-height: 1.1;
+        }
+
+        @include device-mobile() {
+          padding-bottom: 12px;
+          font-size: 21px;
+          line-height: 1.1;
+        }
+      }
+
+      .section3-header {
+        line-height: 1.1;
+
+        @include device-tablet() {
+          font-size: 50px;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+
+      .section3-text {
+        padding-top: 35px;
+        padding-bottom: 60px;
+        line-height: 1.3;
+
+        @include device-tablet() {
+          // font-size: 22px;
+        }
+
+        @include device-mobile() {
+          padding-top: 16px;
+          padding-bottom: 20px;
+          font-size: 18px;
+        }
+      }
+
+      .section3-detail {
+        padding-top: 20px;
+
+        > a {
+          padding: 14px 20px;
+          border: 2px solid $white;
+
+          > img {
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .section4 {
+    padding: 150px 0;
+
+    > div {
+      max-width: 1030px;
+    }
+
+    @include device-tablet() {
+      padding: 120px 0;
+    }
+
+    @include device-mobile() {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .section4-header {
+      padding-bottom: 10px;
+      letter-spacing: -2px;
+      line-height: 1.1;
+
+      @include device-tablet() {
+        font-size: 50px;
+        word-break: keep-all;
+      }
+
+      @include device-mobile() {
+        font-size: 28px;
+      }
+    }
+
+    .section4-text {
+      padding-bottom: 50px;
+      line-height: 1.4;
+
+      @include device-mobile() {
+        padding-bottom: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

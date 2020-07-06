@@ -1,0 +1,13 @@
+//전역적으로 쓰일 scss파일들
+
+@import "./base.scss";
+@import "./variable.scss";
+@import "./fonts.scss";
+
+@import "./mixin.device.scss";
+
+@import "./module.flex.scss";
+@import "./module.grid.scss";
+@import "./module.display.scss";
+
+@import "./ant-overrite.scss";

@@ -1,0 +1,77 @@
+@import "~/assets/styles/import.scss";
+
+.parkInfo {
+  padding-bottom: 140px;
+
+  @include device-tablet() {
+    padding-bottom: 60px;
+  }
+
+  @include device-mobile() {
+    padding-bottom: 30px;
+  }
+
+  .section1-header {
+    word-break: keep-all;
+
+    @include device-tablet() {
+      font-size: 33px;
+      line-height: 1.2;
+    }
+
+    @include device-mobile() {
+      font-size: 25px;
+      line-height: 1.2;
+    }
+  }
+
+  .section1-text {
+    padding-top: 10px;
+    padding-bottom: 65px;
+    line-height: 1.1;
+    word-break: keep-all;
+
+    @include device-mobile() {
+      padding-top: 0;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+
+  .parkInfo-postbox {
+    padding-top: 250px;
+    max-width: 1300px;
+
+    @include device-tablet() {
+      padding-top: 110px;
+    }
+
+    > div {
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      @include device-tablet() {
+        &:not(:last-child) {
+          margin-right: 5px;
+          padding-bottom: 30px;
+        }
+      }
+
+      @include device-mobile() {
+        &:not(:last-child) {
+          margin-right: 5px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+
+    @include device-tablet() {
+      padding-top: 150px;
+    }
+
+    @include device-mobile() {
+      padding-top: 60px;
+    }
+  }
+}

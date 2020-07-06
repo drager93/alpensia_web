@@ -1,0 +1,161 @@
+@import "~/assets/styles/import.scss";
+
+.alpensia-public-wrapper {
+  .section1 {
+    height: 390px;
+    background-image: url("../static/images/info/section1-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-mobile() {
+      height: 300px;
+    }
+
+    > div {
+      max-width: 620px;
+
+      .section1-header {
+        padding: 10px 0;
+        line-height: 1.1;
+
+        @include device-mobile() {
+          padding-bottom: 20px;
+          font-size: 30px;
+        }
+      }
+
+      .section1-text {
+        line-height: 1.4;
+
+        @include device-mobile() {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .section2 {
+    .section2-content-container {
+      padding-top: 106px;
+      padding-bottom: 80px;
+
+      @include device-tablet() {
+        padding-top: 70px;
+        padding-bottom: 30px;
+      }
+
+      @include device-mobile() {
+        padding-top: 70px;
+        padding-bottom: 30px;
+      }
+
+      .section2-header {
+        @include device-tablet() {
+          line-height: 1.2;
+          word-break: keep-all;
+        }
+
+        @include device-mobile() {
+          padding: 0 30px;
+          font-size: 28px;
+          padding-bottom: 20px;
+          line-height: 1.2;
+          word-break: keep-all;
+        }
+      }
+
+      .section2-text {
+        padding-top: 19px;
+        padding-bottom: 25px;
+        line-height: 1.4;
+        word-break: keep-all;
+      }
+
+      .m-section2-text {
+        padding-bottom: 30px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .section3 {
+    padding-top: 110px;
+    padding-bottom: 60px;
+    background-image: url("../static/images/info/section3-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-mobile() {
+      padding-top: 46px;
+      padding-bottom: 36px;
+    }
+
+    .section3-content {
+      max-width: 1000px;
+
+      .section3-subheader {
+        @include device-tablet() {
+          font-size: 28px;
+          line-height: 1.2;
+        }
+
+        @include device-mobile() {
+          padding: 0 30px;
+          padding-bottom: 12px;
+          font-size: 21px;
+          line-height: 1.2;
+        }
+      }
+      .section3-header {
+        line-height: 1.1;
+
+        @include device-tablet() {
+          font-size: 50px;
+          line-height: 1.2;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+
+      .section3-text {
+        padding-top: 35px;
+        padding-bottom: 60px;
+        line-height: 1.3;
+
+        @include device-tablet() {
+          word-break: keep-all;
+          line-height: 1.3;
+        }
+
+        @include device-mobile() {
+          padding-top: 16px;
+          padding-bottom: 20px;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.4;
+        }
+      }
+
+      > img {
+        margin-bottom: 35px;
+      }
+
+      .section3-detail {
+        // width: 220px;
+
+        > a {
+          padding: 14px 20px;
+          border: 2px solid $white;
+
+          > img {
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+}

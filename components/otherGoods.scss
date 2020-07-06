@@ -1,0 +1,48 @@
+@import "~/assets/styles/import.scss";
+
+.otherGoods {
+  padding: 140px 0;
+
+  @include device-tablet() {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  @include device-mobile() {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .goods-title {
+    @include device-mobile() {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  .image-box {
+    padding-top: 40px;
+
+    @include device-mobile() {
+      padding-top: 30px;
+    }
+
+    > div {
+      > a {
+        > img {
+          @include device-tablet() {
+            margin-top: 10px;
+          }
+
+          @include device-mobile() {
+            margin-top: 10px;
+            width: 163px;
+          }
+        }
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

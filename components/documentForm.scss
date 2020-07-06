@@ -1,0 +1,75 @@
+@import "~/assets/styles/import.scss";
+
+.form-wrapper {
+  .form-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $greyish-brown;
+
+    @include device-mobile {
+      font-size: 20px;
+    }
+  }
+
+  .form-sub {
+    margin-top: 25px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    max-width: 1100px;
+  }
+
+  .download-wrap {
+    max-width: 1100px;
+
+    .download-title {
+      padding-top: 45px;
+      padding-bottom: 25px;
+    }
+
+    .download-content {
+      @include device-tablet {
+        justify-content: center;
+      }
+
+      @include device-mobile {
+        justify-content: center;
+      }
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+
+      > a {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 40px 20px;
+        border: 1px solid #dddddd;
+        min-width: 240px;
+
+        @include device-tablet {
+          margin-right: 5px;
+        }
+
+        @include device-mobile {
+          margin-right: 0;
+        }
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+
+        &:hover {
+          border: 1px solid #8d775a;
+        }
+      }
+
+      .content-wrap {
+        .card-title {
+          > div {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

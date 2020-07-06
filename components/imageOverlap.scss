@@ -1,0 +1,88 @@
+@import "~/assets/styles/import.scss";
+
+.imageOverlap-wrapper {
+  .overlap-back {
+    position: relative;
+    height: 456px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include device-tablet() {
+      padding: 0 50px;
+    }
+
+    .img-wrap {
+      top: 36px;
+      left: calc(50% - 500px);
+      position: absolute;
+      position: relative;
+      width: 1000px;
+      height: 490px;
+
+      .overlap-img {
+        width: 100%;
+        height: 100%;
+
+        @include device-tablet() {
+          width: 800px;
+          left: calc(50% - 400px);
+        }
+      }
+
+      .star {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+
+        @include device-mobile {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .m-overlap-back {
+    height: 175px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    @include device-tablet() {
+      height: 300px;
+    }
+
+    .m-star {
+      position: absolute;
+      width: 30%;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  .overlap-text {
+    padding-top: 110px;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    @include device-tablet() {
+      padding-top: 20px;
+    }
+
+    @include device-mobile() {
+      padding-top: 20px;
+    }
+
+    > div {
+      width: 1000px;
+      line-height: 1.4;
+      word-break: keep-all;
+
+      @include device-mobile() {
+        font-size: 14px;
+        text-align: start;
+      }
+    }
+  }
+}

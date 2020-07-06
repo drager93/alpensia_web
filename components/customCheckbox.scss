@@ -1,0 +1,23 @@
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+
+  img {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+
+    &:not(:first-child) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &.on {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

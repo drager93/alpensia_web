@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  alpensia_r2:
+    image: alpensia_r2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"

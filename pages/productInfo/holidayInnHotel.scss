@@ -1,0 +1,125 @@
+@import "~/assets/styles/import.scss";
+
+.holidayHotel-wrapper {
+  .section2 {
+    .section2-s1 {
+      padding-top: 106px;
+      padding-bottom: 65px;
+
+      @include device-mobile() {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+      .s1-header {
+        line-height: 1.1;
+
+        @include device-tablet() {
+          font-size: 50px;
+        }
+
+        @include device-mobile() {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .section2-s3 {
+      margin-top: 200px;
+      position: relative;
+
+      @include device-tablet() {
+        margin-top: 60px;
+      }
+
+      @include device-mobile() {
+        margin-top: 60px;
+      }
+
+      .s3-header {
+        @include device-mobile() {
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+
+      .postbox-wrapper {
+        max-width: 1500px;
+        position: relative;
+
+        .postbox {
+          padding-top: 40px;
+
+          @include device-tablet() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          > div {
+            margin-right: 5px;
+
+            @include device-tablet() {
+              margin-right: 0px;
+              padding-bottom: 30px;
+            }
+
+            @include device-mobile() {
+              margin-right: 0px;
+              padding-bottom: 30px;
+            }
+          }
+        }
+
+        .zindex-background {
+          max-width: 1500px;
+          position: absolute;
+          top: 190px;
+          left: 0;
+          height: 235px;
+          z-index: -9;
+          background-color: $blue-grey;
+          opacity: 0.2;
+        }
+      }
+    }
+
+    .section2-s4 {
+      padding-top: 200px;
+
+      @include device-tablet() {
+        padding-top: 60px;
+      }
+
+      @include device-mobile() {
+        padding-top: 60px;
+      }
+
+      .sectio2-header {
+        padding-bottom: 40px;
+
+        @include device-mobile() {
+          padding-bottom: 15px;
+          font-size: 28px;
+        }
+      }
+
+      .postbox {
+        padding-bottom: 130px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+
+        @include device-mobile() {
+          max-width: 100%;
+          padding-bottom: 60px;
+        }
+
+        > div {
+          @include device-mobile() {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}

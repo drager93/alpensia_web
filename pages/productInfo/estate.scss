@@ -1,0 +1,130 @@
+@import "~/assets/styles/import.scss";
+
+.estate-wrapper {
+  .section1 {
+    padding-top: 106px;
+    padding-bottom: 65px;
+
+    @include device-mobile() {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    .section1-header {
+      .header-text {
+        // padding-bottom: 85px;
+        margin-bottom: 53px;
+        padding: 35px 70px;
+        line-height: 1.2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        word-break: keep-all;
+        background-image: url("../../static/images/productInfo/estate/text-back.png");
+
+        @include device-mobile() {
+          // padding-bottom: 40px;
+          padding: 20px 0;
+          font-size: 20px;
+        }
+      }
+
+      .t-header-text {
+        margin-bottom: 53px;
+        padding: 30px 0;
+        line-height: 1.2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        word-break: keep-all;
+        background-image: url("../../static/images/productInfo/estate/text-back.png");
+      }
+
+      .m-header-text {
+        margin-bottom: 53px;
+        padding: 30px 0;
+        line-height: 1.2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        word-break: keep-all;
+        background-image: url("../../static/images/productInfo/estate/text-back.png");
+      }
+
+      .header-title {
+        padding-bottom: 40px;
+        letter-spacing: -2px;
+        line-height: 1.2;
+        word-break: keep-all;
+
+        @include device-mobile() {
+          padding-bottom: 20px;
+          font-size: 27px;
+        }
+      }
+
+      .m-header-title {
+        padding-bottom: 30px;
+        font-size: 27px;
+        word-break: keep-all;
+
+        @include device-tablet() {
+          padding-bottom: 40px;
+          font-size: 50px;
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+
+  .section2 {
+    .section2-header {
+      > div {
+        @include device-mobile() {
+          padding: 0 30px;
+          font-size: 28px;
+          text-align: center;
+          line-height: 1.1;
+        }
+      }
+    }
+
+    .section2-content {
+      padding-top: 40px;
+
+      @include device-tablet() {
+        padding-bottom: 80px;
+      }
+
+      @include device-mobile() {
+        padding-top: 10px;
+      }
+
+      > div {
+        max-width: 1500px;
+        position: relative;
+
+        .post-box {
+          max-width: 1300px;
+
+          > div {
+            margin-right: 5px;
+
+            @include device-tablet() {
+              margin-right: 0px;
+            }
+
+            @include device-mobile() {
+              margin-right: 0px;
+              padding-bottom: 30px;
+            }
+          }
+        }
+
+        .zindex-background {
+          max-width: 1500px;
+          position: absolute;
+          top: 155px;
+          left: 0;
+          height: 235px;
+          z-index: -9;
+          background-color: $white-nine;
+        }
+      }
+    }
+  }
+}

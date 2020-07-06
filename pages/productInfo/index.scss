@@ -1,0 +1,243 @@
+@import "~/assets/styles/import.scss";
+
+.productInfo-wrapper {
+  .section {
+    height: 390px;
+    background-color: $dark-grey;
+
+    @include device-mobile() {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      height: auto;
+    }
+
+    .section-content {
+      .section-header {
+        @include device-mobile() {
+          font-size: 30px;
+        }
+      }
+      .section-subheader {
+        padding: 10px 0;
+        line-height: 1.2;
+
+        @include device-mobile() {
+          font-size: 17px;
+        }
+      }
+
+      .section-text {
+        line-height: 1.4;
+
+        @include device-mobile() {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .section1 {
+    > div {
+      > a {
+        margin-top: 30px;
+        padding: 8px 30px;
+        border: 1px solid white;
+
+        @include device-mobile() {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .section1-left {
+      padding-top: 195px;
+      padding-bottom: 136px;
+      background-image: url("../../static/images/productInfo/section1-left.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      .section1-header {
+        padding-top: 5px;
+        padding-bottom: 13px;
+
+        @include device-mobile() {
+          padding-top: 0;
+          padding-bottom: 10px;
+        }
+      }
+
+      .section1-text {
+        @include device-mobile() {
+          text-align: center;
+          font-weight: 300;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .section1-right {
+      padding-top: 215px;
+      padding-bottom: 136px;
+      background-image: url("../../static/images/productInfo/section1-right.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      .section1-header {
+        padding-bottom: 13px;
+
+        @include device-mobile() {
+          padding-bottom: 10px;
+          text-align: center;
+        }
+      }
+
+      .section1-text {
+        @include device-mobile() {
+          text-align: center;
+          font-weight: 300;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  .section2 {
+    > div {
+      padding-top: 214px;
+      padding-bottom: 135px;
+
+      @include device-tablet() {
+        padding-top: 150px;
+        padding-bottom: 100px;
+      }
+
+      @include device-mobile() {
+        padding-top: 215px;
+        padding-bottom: 118px;
+      }
+
+      > a {
+        padding: 8px 30px;
+        border: 1px solid white;
+      }
+
+      .image-text {
+        padding-top: 13px;
+        padding-bottom: 30px;
+
+        @include device-mobile() {
+          padding-top: 10px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+
+    .section2-left {
+      background-image: url("../../static/images/productInfo/section2-left.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      .star {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+
+        @include device-mobile {
+          width: 50%;
+        }
+      }
+
+      .image-title {
+        @include device-tablet() {
+          font-size: 23px;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+
+      .image-text {
+        @include device-tablet() {
+          font-size: 13px;
+        }
+      }
+
+      .left-detail {
+        background-color: $dark-beige;
+      }
+    }
+
+    .section2-middle {
+      background-image: url("../../static/images/productInfo/section2-middle.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      .star {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+
+        @include device-mobile {
+          width: 50%;
+        }
+      }
+
+      .image-title {
+        @include device-tablet() {
+          font-size: 23px;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+
+      .image-text {
+        @include device-tablet() {
+          font-size: 13px;
+        }
+
+        @include device-mobile() {
+        }
+      }
+
+      .middle-detail {
+        background-color: $blue-grey;
+      }
+    }
+
+    .section2-right {
+      background-image: url("../../static/images/productInfo/section2-right.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      .image-title {
+        @include device-tablet() {
+          font-size: 23px;
+        }
+
+        @include device-mobile() {
+          font-size: 28px;
+        }
+      }
+
+      .image-text {
+        @include device-tablet() {
+          // font-size: 40px;
+        }
+      }
+
+      .right-detail {
+        background-color: $grass;
+      }
+    }
+  }
+}
